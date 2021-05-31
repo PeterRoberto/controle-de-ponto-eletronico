@@ -191,6 +191,19 @@
           box-shadow: none;
   position: relative;
 }
+@media (max-width: 1401px) {
+  .info-progress {
+    margin-bottom: 20px;
+  }
+  .progress {
+    width: 130px;
+    height: 130px !important;
+    line-height: 120px;
+  }
+  .progress .progress-value {
+    top: 0% !important;
+  }
+}
 .progress:after {
   content: "";
   width: 100%;
@@ -660,14 +673,6 @@
   width: 100%;
   display: block;
 }
-.infos-right-side .box-baloon .box-all-progress {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
 .infos-right-side .map-coop {
   margin-top: 30px;
 }
@@ -859,6 +864,11 @@
   .infos-right-side .box-baloon .box-users .box-info-user span {
     font-size: 13px;
   }
+  .infos-right-side .box-baloon .box-all-progress .info-progress span {
+    font-size: 13px;
+    line-height: 18px;
+    display: block;
+  }
 }
 @media (max-width: 1201px) {
   .sidebar .infos-sidebar .welcome span {
@@ -960,6 +970,15 @@
   }
   .infos-right-side .box-baloon .box-users .box-info-user span {
     font-size: 11px;
+  }
+  .infos-right-side .box-baloon .box-all-progress .info-progress span {
+    font-size: 13px;
+  }
+}
+@media (max-width: 575px) {
+  .infos-right-side .box-baloon {
+    margin-top: 30px;
+    border: 1px solid #ccc;
   }
 }
 
